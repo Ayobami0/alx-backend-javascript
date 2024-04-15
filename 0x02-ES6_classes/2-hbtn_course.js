@@ -4,7 +4,7 @@ export default class HolbertonCourse {
       throw new Error('Length must be a number');
     }
 
-    if (Array.isArray(students)) {
+    if (!Array.isArray(students)) {
       throw new Error('Students must be an array');
     }
 
@@ -44,7 +44,7 @@ export default class HolbertonCourse {
   }
 
   set students(val) {
-    if (Array.isArray(val)) {
+    if (!Array.isArray(val)) {
       throw new Error('Students must be an array');
     }
     this._students = val;
