@@ -4,5 +4,5 @@ console.log(
   cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), 'bon'),
 );
 console.log(
-  cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), ''),
+  cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana'])),
 );
