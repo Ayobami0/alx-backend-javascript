@@ -14,7 +14,7 @@ const app = http.createServer((req, res) => {
       let result = '';
       const students = data.trim().split('\n').slice(1).map((e) => e.split(','));
 
-      result += `Number of students: ${students.length}`;
+      result += `This is the list of our students\nNumber of students: ${students.length}`;
 
       const fields = {};
       students.forEach((e) => {
@@ -33,5 +33,7 @@ const app = http.createServer((req, res) => {
     })).then((d) => { res.end(d); }).catch((e) => { throw e; });
   } else if (url === '/') { res.end('Hello Holberton School!'); }
 });
+
+module.exports = app;
 
 app.listen(1245);
