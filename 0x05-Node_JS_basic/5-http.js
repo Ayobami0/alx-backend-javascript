@@ -30,7 +30,7 @@ const app = http.createServer((req, res) => {
         }
       }
       resolve(result);
-    })).then((d) => { res.end(d); }).catch((e) => { throw e;});
+    })).then((d) => { res.end(d); }).catch((e) => { throw e; });
   } else if (url === '/') { res.end('Hello Holberton School!'); }
 });
 

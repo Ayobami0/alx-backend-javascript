@@ -25,6 +25,6 @@ export default class StudentsController {
     if (major !== 'CS' && major !== 'SWE') {
       return response.status(500).send('Major parameter must be CS or SWE');
     }
-    readDatabase(database).then((data) => response.status(200).send(`List: ${data[major].join(', ')}`)).catch(() => { response.status(500).send('Cannot load the database'); });
+    return readDatabase(database).then((data) => response.status(200).send(`List: ${data[major].join(', ')}`)).catch(() => { response.status(500).send('Cannot load the database'); });
   }
 }
