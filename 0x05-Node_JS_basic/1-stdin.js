@@ -1,5 +1,5 @@
-const process = require('node:process');
-const readline = require('node:readline');
+const process = require('process');
+const readline = require('readline');
 
 const rl = readline.createInterface(process.stdin, process.stdout);
 
