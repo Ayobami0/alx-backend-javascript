@@ -5,7 +5,7 @@ function getPaymentTokenFromAPI(success) {
         resolve({data: 'Successful response from the API'});
       }
     }
-  )
+  );
 }
 
 module.exports = getPaymentTokenFromAPI;
