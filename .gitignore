@@ -1,4 +1,4 @@
 node_modules
 package-lock.json
-*.test.js
 0x05-Node_JS_basic/package.json
+0x02-ES6_classes/0-classroom.test.js
